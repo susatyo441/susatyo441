@@ -4,14 +4,12 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
   }
   html, body {
       
       height: 100%;
       
     text-decoration: none;
-    list-style: none;
     
     }
 .sampul {
@@ -306,6 +304,14 @@ filter: drop-shadow(5vh 0 0 #AA1111);
     font-size: 2vh;
     display: block;
 }
+.work{
+    background-color: #EBEBEB;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vh;
+    display: block;
+    padding-bottom: 7vh;
+}
 .education-content{
   display: flex;
   width: 70%;
@@ -332,6 +338,13 @@ filter: drop-shadow(5vh 0 0 #AA1111);
     padding-left: 2.5vh;
     width: 50%;
 }
+.education8{
+    font-weight: 800;
+    margin-top: 5vh;
+    font-size: 2.5vh;
+    padding-left: 2.5vh;
+    width: 50%;
+}
 .education4{
     margin-left: auto;
     font-weight: 800;
@@ -351,6 +364,31 @@ filter: drop-shadow(5vh 0 0 #AA1111);
     margin-top: 3vh;
 }
 .education2 p{
+    font-weight: 600;
+    margin-top: 0.5vh;
+}
+.education7{
+    border-left: #AA1111 solid 0.3vh;
+    padding-left: 2vh;
+    font-weight: 500;
+    font-size: 1.8vh;
+    margin-top: 3vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+.education7 p{
+    font-weight: 600;
+    margin-top: 0.5vh;
+}
+.education9{
+    border-left: #AA1111 solid 0.3vh;
+    padding-left: 2vh;
+    font-weight: 500;
+    font-size: 1.8vh;
+    margin-top: 3vh;
+}
+.education9 p{
     font-weight: 600;
     margin-top: 0.5vh;
 }
@@ -416,17 +454,48 @@ width: 90%;
 .java::after{
     width: 60%;
 }
+
+.working{
+    width: 80vh;
+    margin: auto;
+}
+
+.unorder{
+    margin-left: 4vh;
+}
+.evergreen{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#idk{
+    height:2.5vh;
+}
 @media only screen and (max-width: 821px){
     .education{
         height: 150%;
     }
     .education-content{
-        display: block;
+       
          width: 90%;
     }
     .education1, .education3, .education4{
         width: 100%;
         padding: 0;
+    }
+    .education8{
+        margin-top: 0vh;
+        width: 100%;
+        padding-left: 0vh;
+        margin-right: auto;
+    }
+    .education9{
+        margin-top: 0vh;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+    }
+    #idk{
+        height: 0vh;
     }
     .skill1{
         margin-top: 0;
@@ -436,6 +505,13 @@ width: 90%;
     }
     .education4{
         margin-top: 3vh;
+    }
+    .working{
+        width: 40vh;
+    }
+    .evergreen{
+        margin-bottom: auto;
+        margin-top: 0vh;
     }
 }
 footer{
