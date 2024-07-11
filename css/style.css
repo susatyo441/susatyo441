@@ -297,7 +297,6 @@ filter: drop-shadow(5vh 0 0 #AA1111);
     }
 }
 .education{
-    height: 85%;
     background-color: #FFFFFF;
     position: relative;
     font-family: 'Open Sans', sans-serif;
@@ -337,6 +336,7 @@ filter: drop-shadow(5vh 0 0 #AA1111);
     font-size: 2.5vh;
     padding-left: 2.5vh;
     width: 50%;
+    padding-bottom: 7vh;
 }
 .education8{
     font-weight: 800;
@@ -415,6 +415,63 @@ filter: drop-shadow(5vh 0 0 #AA1111);
 .skill h4 p , .skill1 h4 p{
    margin-left: auto;
 }
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 50vh;
+
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .sertif{
+    display: flex;
+    align-items: center;
+    gap: 4vh;
+    padding: 2vh;
+    margin-top: 5vh;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card-text {
+    font-size: 2vh;
+    padding: 1vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .card-image img {
+    transform: scale(1.1);
+  }
+
 .skill hr, .skill1 hr{
     width:100%;
     text-align:left;
@@ -473,7 +530,7 @@ width: 90%;
 }
 @media only screen and (max-width: 821px){
     .education{
-        height: 150%;
+        margin-bottom: 7vh;
     }
     .education-content{
        
@@ -513,6 +570,12 @@ width: 90%;
         margin-bottom: auto;
         margin-top: 0vh;
     }
+    .education9 {
+    flex-direction: column;
+  }
+  .card{
+    width: 30vh;
+  }
 }
 footer{
     height: 25%;
@@ -523,7 +586,7 @@ footer{
     position: relative;
     display: block;
     font-family: 'Open Sans', sans-serif;
-    bottom: 0;
+ 
 }
 .kontak{
     width: 70%;
