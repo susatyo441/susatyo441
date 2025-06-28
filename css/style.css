@@ -125,6 +125,7 @@ filter: drop-shadow(5vh 0 0 #AA1111);
     font-size: 2vh;
     padding-bottom: 5px;
     border-bottom: #AA1111 solid;
+    height: fit-content;
     position: relative;
     display: inline-block;
     margin-top: 1vh;
@@ -139,6 +140,13 @@ filter: drop-shadow(5vh 0 0 #AA1111);
     font-weight: 600;
   justify-content: center;
   align-items: center;
+}
+
+.github {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+margin-left: auto;
 }
 
 @media only screen and (max-width: 821px) {
@@ -254,6 +262,16 @@ filter: drop-shadow(5vh 0 0 #AA1111);
     font-weight: 600;
     margin-top: 0.5vh;
 }
+
+.multiple-github{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    margin-top: 2vh;
+    margin-left: auto;
+}
+
 @media only screen and (max-width: 821px){
     .about-me{
         height: 100%;
@@ -294,6 +312,10 @@ filter: drop-shadow(5vh 0 0 #AA1111);
         padding-top: 1.5vh;
         height: 0;
         margin-top: 5vh;
+    }
+    .multiple-github{
+        flex-direction: row;
+        gap: 2vh;
     }
 }
 .education{
