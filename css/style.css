@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;500&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -324,15 +324,97 @@ margin-left: auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 2vh;
     display: block;
+    padding-bottom: 7vh;
 }
 .work{
-    background-color: #EBEBEB;
+    background-color: #FFFFFF;
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-size: 2vh;
     display: block;
     padding-bottom: 7vh;
 }
+
+/* New Work Experience Timeline Section */
+.work-experience {
+    background-color: #EBEBEB;
+    padding-bottom: 7vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.timeline {
+    position: relative;
+    width: 70%;
+    margin: 5vh auto;
+    /* Re-added padding for spacing from the line */
+    padding-left: 4vh;
+}
+
+/* The vertical line is back */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.4vh;
+    background-color: #AA1111;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* The dot remains hidden */
+.timeline-dot {
+    display: none;
+}
+
+.timeline-date {
+    font-size: 1.8vh;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 1vh;
+}
+
+.timeline-content {
+    background-color: #FFFFFF;
+    padding: 3vh;
+    border-radius: 1vh;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-content h3 {
+    font-size: 2.5vh;
+    font-weight: 700;
+    margin-bottom: 0.5vh;
+    color: #000000;
+}
+
+.timeline-content .company {
+    font-size: 2vh;
+    font-weight: bold;
+    color: #AA1111;
+    margin-bottom: 1.5vh;
+}
+
+.timeline-content p {
+    font-size: 1.8vh;
+    line-height: 1.6;
+    color: #333;
+}
+
+.certificates-section {
+    background-color: #EBEBEB;
+    padding-bottom: 7vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .education-content{
   display: flex;
   width: 70%;
@@ -418,25 +500,85 @@ margin-left: auto;
     padding-bottom: 2vh;
     border-bottom: solid #EBEBEB 0.2vh;
 }
-.skill{
-    
-    font-weight: 500;
-    font-size: 1.8vh;
-    margin-top: 3vh;
-    display: block;
-}
+
 .skill1{
     font-weight: 500;
     font-size: 1.8vh;
     margin-top: 3vh;
     display: block;
+    border-left: #AA1111 solid 0.3vh;
+    padding-left: 2vh;
 }
-.skill h4, .skill1 h4{
-    display: flex;
+
+/* Removing styles for old skill format */
+.skill1 h4, .skill1 hr {
+   display: none;
 }
-.skill h4 p , .skill1 h4 p{
-   margin-left: auto;
+
+/* New styles for the skill list */
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+.skill-list li {
+    font-size: 2vh;
+    font-weight: 600;
+    margin-bottom: 1.5vh;
+}
+.skill-list li:last-child {
+    margin-bottom: 0;
+}
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vh;
+  margin-top: 3vh;
+}
+
+.skill-card {
+  background-color: #f5f5f5;
+  border-left: 0.5vh solid #AA1111;
+  border-radius: 1vh;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 2vh;
+  width: 40%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.skill-title {
+  font-size: 2.2vh;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1vh;
+}
+
+.skill-card .skill-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-card .skill-list li {
+  font-size: 1.8vh;
+  margin-bottom: 1vh;
+  color: #333;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 821px) {
+  .skill-cards {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+}
+
+
 
 .card {
     background: white;
@@ -494,46 +636,6 @@ margin-left: auto;
     transform: scale(1.1);
   }
 
-.skill hr, .skill1 hr{
-    width:100%;
-    text-align:left;
-    margin-left:0; 
-    display: block;
-    position: relative;
-    margin-top: 1.5vh;
-    margin-bottom: 2vh;
-    height: 1vh;
-    border-radius: 1vh;
-    background-color: #ebebeb;
-}
-hr::after{
-    content: "";
-    position: absolute;
-    text-align:left;
-    display: block;
-    height: 100%;
-    border-radius: 1vh;
-    background-color: #AA1111;
-}
-.excel::after{
-width: 90%;
-}
-.kotlin::after{
-    width: 80%;
-}
-.edit::after{
-    width: 75%;
-}
-.english::after{
-    width: 95%;
-}
-.html::after{
-    width: 70%;
-}
-.java::after{
-    width: 60%;
-}
-
 .working{
     width: 80vh;
     margin: auto;
@@ -561,6 +663,13 @@ width: 90%;
     .education1, .education3, .education4{
         width: 100%;
         padding: 0;
+    }
+    .education3 {
+        padding-bottom: 0;
+    }
+    .timeline {
+        width: 90%;
+        padding-left: 3vh; /* Adjusted for responsive view */
     }
     .education8{
         margin-top: 0vh;
@@ -643,4 +752,46 @@ footer{
 }
 .copyright a:hover{
     border-bottom: none;
+}
+
+.timeline-content.with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 2vh;
+}
+
+.experience-image {
+  width: 15vh;
+  height: 15vh;
+  object-fit: cover;
+  border-radius: 1.5vh;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.experience-text {
+  flex: 1;
+}
+
+
+/* Work Experience - Responsive Layout */
+@media only screen and (max-width: 768px) {
+  .timeline-content.with-image {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-image {
+    width: 20vh;
+    height: 20vh;
+    margin-bottom: 2vh;
+  }
+
+  .experience-text {
+    width: 100%;
+  }
+
+  .timeline-content {
+    padding: 2vh;
+  }
 }

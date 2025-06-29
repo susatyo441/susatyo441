@@ -12,7 +12,6 @@
     ></script>
     <title>Gelorawan's Portfolio</title>
   </head>
-  <!-- Todo: add skill list -->
   <body>
     <div class="sampul">
       <div class="photo">
@@ -82,20 +81,126 @@
           </div>
         </div>
         <div class="education3">
-          My Experience
-          <div class="education2">
-            Intern: <br />
-            <p>Wangsit / Backend Developer / Aug 2024 - Feb 2025</p>
-            <p class="line1">
-              Adainacara / Backend Developer / Aug 2023 - Mar 2024
-            </p>
-            <br />Honor & Awards<br />
-            <p>Scientific Article Competition / Winner / Feb 2022</p>
+          My Skills
+          <div class="skill-cards">
+            <div class="skill-card">
+              <div class="skill-title">Database Development</div>
+              <ul class="skill-list">
+                <li>MongoDB</li>
+                <li>SQLite</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-title">Backend Development</div>
+              <ul class="skill-list">
+                <li>NestJS</li>
+                <li>GoFiber</li>
+                <li>Express.js</li>
+                <li>Django</li>
+                <li>FastAPI</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-title">Frontend Development</div>
+              <ul class="skill-list">
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-title">Fullstack Development</div>
+              <ul class="skill-list">
+                <li>Laravel</li>
+                <li>Next.js</li>
+                <li>React</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-title">Game Development</div>
+              <ul class="skill-list">
+                <li>Unity</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-title">Mobile Development</div>
+              <ul class="skill-list">
+                <li>Android Kotlin/Java</li>
+                <li>Flutter</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Todo: add fauqo's game, event ukm, and shop vision -->
+    <div class="work-experience">
+      <div class="judul" data-aos="fade-up">
+        <div class="judul1">Experience</div>
+      </div>
+      <div class="judul2" data-aos="fade-up">My Work Experience</div>
+      <div class="timeline" data-aos="fade-up">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Aug 2024 - Feb 2025</div>
+          <div class="timeline-content with-image">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D560BAQHgbNHEgyYb_Q/company-logo_200_200/company-logo_200_200/0/1714726262865?e=2147483647&v=beta&t=syjoz8w6LAvlXCewBJbtO7-Rtc0APWVw4YQ0dJx6UWw"
+              alt="Wangsit"
+              class="experience-image"
+            />
+            <div class="experience-text">
+              <h3>Backend Developer (Internship)</h3>
+              <p class="company">Wangsit, Jakarta</p>
+              <p>
+                Responsible for developing and maintaining server-side logic,
+                focusing on API development and database management to support
+                new and existing features. I worked closely with front-end
+                developers to ensure seamless data integration and contributed
+                to the overall system architecture.
+                <br /><br />
+                During my internship, I developed two major systems:
+                <strong>a Sales Management System</strong> to streamline
+                product, transaction, and customer tracking, and
+                <strong
+                  >a Project Management platform inspired by Trello</strong
+                >
+                featuring boards, tasks, and real-time collaboration tools.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Aug 2023 - Mar 2024</div>
+          <div class="timeline-content with-image">
+            <img
+              src="https://adainacara.com/upload/logo_master_20210909150931.png"
+              alt="Wangsit"
+              class="experience-image"
+            />
+            <div class="experience-text">
+              <h3>Backend Developer (Internship)</h3>
+              <p class="company">Adainacara, Jakarta</p>
+              <p>
+                Developed and maintained RESTful APIs for a
+                <strong>vendor event marketplace platform</strong>. I was
+                responsible for building core features such as:
+                <strong>real-time chat</strong>,
+                <strong>live notification system</strong>,
+                <strong>Google authentication</strong>, and
+                <strong>full-text search powered by Algolia</strong>. I also
+                contributed to ensuring the scalability, performance, and
+                reliability of backend services to support a growing user base
+                and complex vendor-user interactions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="work">
       <div
         class="judul2"
@@ -127,10 +232,11 @@
             </ul>
             <div class="line1"></div>
             <br />
-            Programming Languages:<br />
+            Technologies:<br />
             <ul class="unorder">
               <li>NestJS / Typescript</li>
               <li>Flutter / Dart</li>
+              <li>Firebase</li>
             </ul>
             <br />
             <div class="multiple-github">
@@ -189,11 +295,12 @@
             </ul>
             <div class="line1"></div>
             <br />
-            Programming Languages:<br />
+            Technologies:<br />
             <ul class="unorder">
               <li>C++</li>
               <li>Python</li>
               <li>Kotlin</li>
+              <li>MQTT</li>
             </ul>
             <br />
             <div class="contact" style="margin-left: auto">
@@ -229,10 +336,12 @@
             </ul>
             <div class="line1"></div>
             <br />
-            Programming Languages:<br />
+            Technologies:<br />
             <ul class="unorder">
               <li>Laravel / PHP</li>
               <li>Nextjs / Javascript</li>
+              <li>Google OAuth</li>
+              <li>Algolia</li>
             </ul>
             <br />
             <div class="contact" style="margin-left: auto">
@@ -266,7 +375,7 @@
             </ul>
             <div class="line1"></div>
             <br />
-            Programming Languages:<br />
+            Technologies:<br />
             <ul class="unorder">
               <li>PHP</li>
               <li>JavaScript</li>
@@ -303,7 +412,7 @@
             </ul>
             <div class="line1"></div>
             <br />
-            Programming Languages:<br />
+            Technologies:<br />
             <ul class="unorder">
               <li>PHP</li>
             </ul>
@@ -337,7 +446,7 @@
             </ul>
             <div class="line1"></div>
             <br />
-            Programming Languages:<br />
+            Technologies:<br />
             <ul class="unorder">
               <li>C#</li>
             </ul>
@@ -362,7 +471,7 @@
       </div>
     </div>
 
-    <div class="education">
+    <div class="certificates-section">
       <div class="judul" data-aos="fade-up">
         <div class="judul1">Certificates</div>
       </div>
