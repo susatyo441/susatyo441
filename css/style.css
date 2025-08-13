@@ -649,7 +649,7 @@ margin-left: auto;
     margin-bottom: auto;
 }
 
-#idk{
+.idk{
     height:2.5vh;
 }
 @media only screen and (max-width: 821px){
@@ -677,12 +677,15 @@ margin-left: auto;
         padding-left: 0vh;
         margin-right: auto;
     }
+    .education8.extra{
+        padding-top: 10vh;
+    }
     .education9{
         margin-top: 0vh;
         padding-bottom: 1vh;
         padding-top: 1vh;
     }
-    #idk{
+    .idk{
         height: 0vh;
     }
     .skill1{
